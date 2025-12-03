@@ -104,7 +104,7 @@ export default function Contact() {
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
           </div>
           <p className="text-gray-300 text-sm max-w-xl mx-auto">
-            Discuss your project with our solutions team. We'll respond within 24 hours.
+            Discuss your project with our solutions team. We&apos;ll respond within 24 hours.
           </p>
         </div>
 
@@ -183,7 +183,7 @@ export default function Contact() {
               {submitStatus === 'success' && (
                 <div className="mb-4 p-3 rounded-lg bg-green-500/10 border border-green-500/30">
                   <p className="text-green-400 text-sm font-medium">
-                    ✓ Message sent successfully. We'll respond within 24 hours.
+                    ✓ Message sent successfully. We&apos;ll respond within 24 hours.
                   </p>
                 </div>
               )}
@@ -332,7 +332,7 @@ export default function Contact() {
               ))}
             </div>
             <p className="text-gray-400 text-xs mt-6">
-              We'll work closely with you to develop the optimal solution for your business
+              We&apos;ll work closely with you to develop the optimal solution for your business
             </p>
           </div>
         </div>

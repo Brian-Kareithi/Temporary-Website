@@ -317,7 +317,7 @@ export default function Solutions() {
               Schedule a Strategy Session
             </h2>
             <p className="text-gray-400 text-sm mb-6 max-w-lg mx-auto">
-              Let's analyze your current challenges and develop a customized technology roadmap for your organization.
+              Let&apos;s analyze your current challenges and develop a customized technology roadmap for your organization.
             </p>
             <button 
               onClick={scrollToContact}

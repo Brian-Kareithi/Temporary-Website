@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-end justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-gradient-to-b from-black to-blue-980">
+    <section id="home" className="min-h-screen flex items-end justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-gradient-to-b from-black to-blue-900">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
         {/* Grid Pattern */}
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
         <div className="max-w-2xl mx-auto mb-8">
           <div className="bg-white/10 backdrop-blur-sm border border-blue-400/30 rounded-xl p-5">
             <p className="text-white text-base sm:text-lg font-medium italic">
-              "Stop wasting time on manual tasks. Let our AI agents handle the work while you focus on growing your business."
+              &quot;Stop wasting time on manual tasks. Let our AI agents handle the work while you focus on growing your business.&quot;
             </p>
           </div>
         </div>
