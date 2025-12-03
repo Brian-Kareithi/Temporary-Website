@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import DynamicBackground from './DynamicBackground';
 
 const LoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,30 +16,18 @@ const LoadingScreen = () => {
   if (!isLoading) return null;
 
   return (
-    <div className="fixed inset-0 z-50">
-      <DynamicBackground />
-      <div className="relative z-10 flex items-center justify-center w-full h-full">
-        {/* SVG Gradient Spinner */}
-        <div className="flex justify-center items-center">
-          <svg className="w-20 h-20 animate-spin" viewBox="0 0 100 100">
-            <defs>
-              <linearGradient id="blueWhiteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#0962f1ff" />
-                <stop offset="50%" stopColor="#93c5fd" />
-                <stop offset="100%" stopColor="#ffffff" />
-              </linearGradient>
-            </defs>
-            <circle
-              cx="50"
-              cy="50"
-              r="45"
-              stroke="url(#blueWhiteGradient)"
-              strokeWidth="8"
-              fill="none"
-              strokeLinecap="round"
-              strokeDasharray="100 200"
-            />
-          </svg>
+    <div className="fixed inset-0 z-50 bg-slate-900">
+      <div className="flex items-center justify-center w-full h-full">
+        <div className="relative">
+          {/* Outer ring */}
+          <div className="w-20 h-20 border-4 border-transparent border-t-blue-500 border-r-blue-300 rounded-full animate-spin">
+          </div>
+          
+          {/* Inner ring - subtle accent */}
+          <div className="absolute top-1/2 left-1/2 w-12 h-12 border-2 border-transparent border-b-white border-l-white rounded-full animate-spin -translate-x-1/2 -translate-y-1/2">
+          </div>
+          
+      
         </div>
       </div>
     </div>
